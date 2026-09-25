@@ -55,8 +55,8 @@ sections:
 # Nom affiché à la place du nom de dossier (composante, niveau ou module).
 # La clé est le nom exact du dossier.
 noms:
-  IUT INFO: IUT d'Aix-Marseille, département Informatique
-  UFR ST Dijon: UFR Sciences et Techniques de Dijon
+  IUT INFO: Aix-Marseille Université, IUT d'Aix-en-Provence, département Informatique
+  UFR ST Dijon: Université de Bourgogne Europe, UFR Sciences et Techniques de Dijon
 
 # Ordre des composantes et des niveaux (nom de dossier ; les autres suivent, par ordre alphabétique).
 ordre: [IUT INFO, UFR ST Dijon, BUT 1, BUT 2, BUT 3, Licence 1, Licence 2, Licence 3, Master 1, Master 2]
