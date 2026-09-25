@@ -7,9 +7,9 @@ mots_cles: [SQL, PostgreSQL, PL/pgSQL, Pagila, jointures, GROUP BY, sous-requêt
 
 # Titres affichés à la place des noms de fichiers
 titres:
-  ENS_IUT_R3_07_CM1.pdf: "Chapitre 1 : le langage SQL, rappels sur la sémantique des opérateurs"
-  ENS_IUT_R3_07_CM2.pdf: "Chapitre 2 : PL/pgSQL, programmer dans la base"
-  ENS_IUT_R3_07_CM3.pdf: "Chapitre 3 : contraintes et déclencheurs"
+  ENS_IUT_R3_07_CM1.pdf: "Cours intégré 1 : le langage SQL, rappels sur la sémantique des opérateurs"
+  ENS_IUT_R3_07_CM2.pdf: "Cours intégré 2 : PL/pgSQL, programmer dans la base"
+  ENS_IUT_R3_07_CM3.pdf: "Cours intégré 3 : contraintes et déclencheurs"
   ENS_IUT_R3_07_TD1.pdf: "TD1 : rappels de SQL"
   ENS_IUT_R3_07_TD2.pdf: "TD2 : découverte de PL/pgSQL"
   ENS_IUT_R3_07_TD3.pdf: "TD3 : contraintes et déclencheurs"
