@@ -1,0 +1,22 @@
+# Informations affichées sur le site
+description: >-
+  Rappels sur la sémantique de SQL, programmation dans la base avec PL/pgSQL,
+  contraintes et déclencheurs. Cours intégrés, TD sur la base mini-pagila
+  (version réduite de Pagila) et fiches mémo pour débloquer les erreurs courantes.
+mots_cles: [SQL, PostgreSQL, PL/pgSQL, Pagila, jointures, GROUP BY, sous-requêtes, déclencheurs, triggers, LLM]
+
+# Titres affichés à la place des noms de fichiers
+titres:
+  ENS_IUT_R3_07_CM1.pdf: "Chapitre 1 : le langage SQL, rappels sur la sémantique des opérateurs"
+  ENS_IUT_R3_07_CM2.pdf: "Chapitre 2 : PL/pgSQL, programmer dans la base"
+  ENS_IUT_R3_07_CM3.pdf: "Chapitre 3 : contraintes et déclencheurs"
+  ENS_IUT_R3_07_TD1.pdf: "TD1 : rappels de SQL"
+  ENS_IUT_R3_07_TD2.pdf: "TD2 : découverte de PL/pgSQL"
+  ENS_IUT_R3_07_TD3.pdf: "TD3 : contraintes et déclencheurs"
+  ENS_IUT_R3_07_TD_Base.pdf: "Annexe des TD : la base mini-pagila"
+  ENS_IUT_R3_07_RC_memoSQL_clauses.pdf: "Fiche mémo S1 : anatomie d'une requête"
+  ENS_IUT_R3_07_RC_memoSQL_join.pdf: "Fiche mémo S2 : jointures"
+  ENS_IUT_R3_07_RC_memoSQL_groupby.pdf: "Fiche mémo S3 : GROUP BY"
+  ENS_IUT_R3_07_RC_memoSQL_sousrequetes.pdf: "Fiche mémo S4 : les sous-requêtes"
+  ENS_IUT_R3_07_RC_genSQL.pdf: "Fiche mémo M1 : faire écrire une requête par un LLM"
+  ENS_IUT_R3_07_RC_memoPLpgSQL.pdf: "Aide-mémoire PL/pgSQL"

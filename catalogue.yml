@@ -1,0 +1,88 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Configuration du catalogue (vue GitHub Pages + tableau du README)
+#  C'est le seul fichier à modifier au quotidien. Pour ajouter un support,
+#  il suffit de déposer le fichier dans supports/ : tout le reste est généré.
+# ─────────────────────────────────────────────────────────────────────
+
+titre: Supports pédagogiques
+auteur: Alexis Guyot
+affiliation: Aix-Marseille Université, IUT d'Aix-Marseille et LIS
+description: >-
+  Cours, TD, TP et projets d'informatique que je partage en licence libre.
+  Vous pouvez les télécharger, les modifier et les réutiliser dans vos
+  propres enseignements, en citant la source.
+contact: ""            # ex. https://www.lis-lab.fr/... ou mailto:... (vide = masqué)
+
+# Laisser vide : déduit automatiquement dans GitHub Actions.
+# À renseigner seulement pour un domaine personnalisé.
+url_site: ""           # ex. https://agu.github.io/enseignements/
+depot: ""              # ex. agu/enseignements
+branche: main
+
+# Dossier de dépôt : Composante / Niveau / Module / Section / fichiers
+racine: supports
+
+licence:
+  nom: CC BY-SA 4.0
+  url: https://creativecommons.org/licenses/by-sa/4.0/deed.fr
+licence_code:
+  nom: MIT
+  fichier: LICENSE-CODE
+
+# Ordre d'affichage des sections d'un module, et noms de dossiers reconnus.
+# La comparaison ignore la casse, les accents, les tirets et les espaces.
+# Un dossier inconnu reste affiché, sous son propre nom, après ceux-ci.
+sections:
+  - nom: Cours magistraux
+    court: CM
+    alias: [cm, cours, cours magistraux, cours integre, amphi, slides, diapos]
+  - nom: Travaux dirigés
+    court: TD
+    alias: [td, travaux diriges, exercices]
+  - nom: Travaux pratiques
+    court: TP
+    alias: [tp, travaux pratiques]
+  - nom: Projet
+    court: Projet
+    alias: [projet, projets, sae, mini projet]
+  - nom: Évaluations
+    court: Éval.
+    alias: [evaluation, evaluations, examens, examen, ds, controles, partiels]
+  - nom: Ressources complémentaires
+    court: Ressources
+    alias: [ressources complementaires, ressources, complements, annexes, docs]
+
+# Nom affiché à la place du nom de dossier (composante, niveau ou module).
+# La clé est le nom exact du dossier.
+noms:
+  IUT INFO: IUT d'Aix-Marseille, département Informatique
+  UFR ST Dijon: UFR Sciences et Techniques de Dijon
+
+# Ordre des composantes et des niveaux (nom de dossier ; les autres suivent, par ordre alphabétique).
+ordre: [IUT INFO, UFR ST Dijon, BUT 1, BUT 2, BUT 3, Licence 1, Licence 2, Licence 3, Master 1, Master 2]
+
+# Un sous-dossier dont le nom contient une période regroupe d'anciennes versions.
+# Reconnaît : « 2021-2023 », « TP - 2021-2023 », « CM 2022 », « 2021-22 », « 2021_2023 ».
+# Si une section ne contient QUE des périodes, la plus récente est présentée
+# comme la version à jour (dépliée sur le site, incluse dans le .zip du module).
+motif_archive: '(?<!\d)(19|20)\d{2}(\s*[-–_/]\s*(19|20)?\d{2})?(?!\d)'
+
+# Mots qui, dans un nom de fichier, signalent une version enseignant (corrigé, barème…).
+motifs_enseignant: [enseignant, enseignants, prof, correction, corrige, corriges, solution, solutions]
+
+# Un sous-dossier (hors archive) de plus de N fichiers, ou qui contient lui-même
+# des dossiers, est proposé comme une seule archive .zip (squelette de code, jeu de données…).
+seuil_dossier_zip: 6
+
+# Fichiers jamais publiés (motifs de type shell).
+ignorer:
+  - .DS_Store
+  - Thumbs.db
+  - desktop.ini
+  - "~$*"
+  - "*.tmp"
+  - "*.aux"
+  - "*.log"
+  - "*.synctex.gz"
+  - .gitkeep
+  - _infos.yml

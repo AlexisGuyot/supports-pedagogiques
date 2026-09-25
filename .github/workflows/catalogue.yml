@@ -1,0 +1,63 @@
+name: Catalogue
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "supports/**"
+      - "site/**"
+      - "scripts/**"
+      - "catalogue.yml"
+      - "README.md"
+      - "LICENSE*"
+      - ".github/workflows/catalogue.yml"
+  workflow_dispatch:        # bouton « Run workflow » dans l'onglet Actions
+
+permissions:
+  contents: write           # pour committer le README régénéré
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  construire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0    # historique complet : dates de mise à jour exactes
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: Générer le site et le catalogue du README
+        run: python scripts/construire.py
+
+      - name: Committer le README s'il a changé
+        run: |
+          if ! git diff --quiet README.md; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Catalogue : mise à jour automatique du README" README.md
+            git push
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deployer:
+    needs: construire
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - id: deploiement
+        uses: actions/deploy-pages@v4

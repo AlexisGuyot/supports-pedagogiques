@@ -1,0 +1,11 @@
+# Informations affichées sur le site
+description: >-
+  Introduction à la programmation concurrente : sections critiques et sémaphores,
+  puis mise en œuvre en C++20 et OpenMP. Projet en binôme : inventer une variante
+  d'un problème classique de concurrence et l'implémenter.
+mots_cles: [concurrence, threads, sémaphores, section critique, C++20, OpenMP, parallélisme]
+
+titres:
+  ENS_IUT_R5_A_05_R5_B_04_CI1.pdf: "Cours intégré 1 : enjeux, sections critiques et sémaphores"
+  ENS_IUT_R5_A_05_R5_B_04_CI2.pdf: "Cours intégré 2 : des concepts au code, C++20 et OpenMP"
+  ENS_IUT_R5_A_05_R5_B_04_Projet.pdf: "Sujet de projet : inventer une variante d'un problème classique de concurrence"

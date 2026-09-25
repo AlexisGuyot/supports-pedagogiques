@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{titre}}, {{auteur}}</title>
+  <meta name="description" content="{{description}}">
+  <meta property="og:title" content="{{titre}}, {{auteur}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{url_site}}">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23fafbfd'/><path d='M0 8h32M0 16h32M0 24h32' stroke='%23b9c4e6' stroke-width='1.5'/><path d='M9 0v32' stroke='%23d2323f' stroke-width='2'/></svg>">
+  <link rel="preload" href="fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="evitement" href="#catalogue">Aller au catalogue</a>
+
+  <header class="entete">
+    <div class="entete-marge" aria-hidden="true"></div>
+    <div class="entete-corps">
+      <p class="signature" id="signature"></p>
+      <h1 id="titre">{{titre}}</h1>
+      <p class="chapeau" id="description">{{description}}</p>
+      <p class="licence" id="licence"></p>
+
+      <div class="recherche" role="search">
+        <label for="q">Rechercher un module ou un document</label>
+        <div class="champ">
+          <input id="q" type="search" autocomplete="off" spellcheck="false"
+                 placeholder="R3.07, SQL, OCaml, concurrence…">
+          <kbd aria-hidden="true">/</kbd>
+        </div>
+        <div class="filtres" id="filtres" role="group" aria-label="Filtrer par composante"></div>
+        <p class="bilan" id="bilan" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </header>
+
+  <main id="catalogue" class="catalogue" tabindex="-1">
+    <p class="chargement">Chargement du catalogue…</p>
+  </main>
+
+  <footer class="pied" id="pied"></footer>
+
+  <noscript>
+    <p class="sans-js">Cette page a besoin de JavaScript pour afficher le catalogue.
+      Tous les supports restent accessibles directement dans le
+      <a href="{{depot}}">dépôt GitHub</a>.</p>
+  </noscript>
+  <script src="app.js" defer></script>
+</body>
+</html>

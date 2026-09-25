@@ -1,0 +1,15 @@
+# Informations affichées sur le site
+titre: Algorithmique et complexité
+description: >-
+  Travaux pratiques d'algorithmique en programmation fonctionnelle (OCaml) :
+  tris, récursion terminale, graphes et algorithme de Dijkstra, programmation
+  dynamique, méthode de Newton et lancer de rayon.
+mots_cles: [OCaml, programmation fonctionnelle, tri, Dijkstra, graphes, programmation dynamique, Newton, lancer de rayon]
+
+titres:
+  M1_Algo_TP1.pdf: "TP1 : algorithmes de tri"
+  M1_Algo_TP2.pdf: "TP2 : récursion terminale et structures de données"
+  M1_Algo_TP3.pdf: "TP3 : graphes et Dijkstra"
+  M1_Algo_TP4.pdf: "TP4 : programmation dynamique"
+  M1_Algo_TP5.pdf: "TP5 : bassins d'attraction de Newton"
+  M1_Algo_TP6.pdf: "TP6 : lancer de rayon primaire"
