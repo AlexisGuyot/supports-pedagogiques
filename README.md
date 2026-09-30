@@ -11,7 +11,7 @@ partager vos versions modifiées sous la même licence. Les corrections des exer
 <!-- CATALOGUE:DEBUT (généré automatiquement, ne pas modifier à la main) -->
 **[Parcourir et télécharger les supports sur le site du catalogue](https://AlexisGuyot.github.io/supports-pedagogiques/)** (recherche, archives .zip par module, anciennes versions).
 
-3 modules et 24 documents à jour, dernière modification le 25 septembre 2026.
+3 modules et 24 documents à jour, dernière modification le 30 septembre 2026.
 
 ### Aix-Marseille Université, IUT d'Aix-en-Provence, département Informatique
 
